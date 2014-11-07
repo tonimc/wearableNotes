@@ -12,6 +12,6 @@ Aplicación para Android con interacción con Android Wear desarrollada en el GD
 
 ![alt text](https://raw.githubusercontent.com/tonimc/wearableNotes/master/screenshots/notification2.png "screen")
 
-![alt text](https://raw.githubusercontent.com/tonimc/wearableNotes/master/screenshots/screen2.png "screen")
+![alt text](https://raw.githubusercontent.com/tonimc/wearableNotes/master/screenshots/screen3.png "screen")
 
 
