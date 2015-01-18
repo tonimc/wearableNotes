@@ -1,12 +1,14 @@
 package com.toniousli.wearablenotes;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -51,16 +53,19 @@ public class MainActivity extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.action_add:
+                Intent intent = new Intent(MainActivity.this, NoteActivity.class);
+                startActivity(intent);
+                return true;
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_add) {
-            Intent intent = new Intent(MainActivity.this, NoteActivity.class);
-            startActivity(intent);
-            return true;
+            case R.id.action_about:
+                Dialog aboutDialog = new Dialog(this);
+                aboutDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                aboutDialog.setContentView(R.layout.dialog_help);
+                aboutDialog.setCancelable(true);
+                aboutDialog.show();
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
