@@ -2,14 +2,12 @@
 <resources>
 
     <string name="app_name">Wearable Notes</string>
+
     <string name="action_add">Add</string>
+    <string name="action_help">Ayuda</string>
 
     <string name="title_activity_note">Note</string>
     <string name="note_title">Title</string>
     <string name="note_text">Text</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="note_part">Parte</string>
 
 </resources>
