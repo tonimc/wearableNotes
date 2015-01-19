@@ -7,29 +7,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.toniousli.wearablenotes.NoteActivity">
+    tools:context="com.toniousli.wearablenotes.ui.activity.NoteActivity">
 
     <EditText
         android:id="@+id/note_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/note_title" />
+        android:singleLine="true"
+        android:hint="@string/note_title"
+        android:imeOptions="actionNext" />
 
     <EditText
         android:id="@+id/note_text"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:gravity="top|left"
         android:hint="@string/note_text"
         android:lines="18"
         android:maxLines="20"
         android:minLines="6"
         android:scrollbars="vertical" />
-
-    <Button
-        android:id="@+id/button_save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save" />
 
 </LinearLayout>
