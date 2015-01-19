@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.toniousli.wearablenotes.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NoteActivity"
+            android:name=".ui.activity.NoteActivity"
             android:label="@string/title_activity_note" >
         </activity>
         <service android:name="com.toniousli.wearablenotes.NoteService" />
