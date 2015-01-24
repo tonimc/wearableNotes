@@ -19,6 +19,9 @@
         <activity
             android:name=".ui.activity.NoteActivity"
             android:label="@string/title_activity_note" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.activity.MainActivity" />
         </activity>
         <service android:name="com.toniousli.wearablenotes.NoteService" />
     </application>
